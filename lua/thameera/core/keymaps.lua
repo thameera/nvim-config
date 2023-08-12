@@ -22,6 +22,10 @@ keymap.set("n", "<leader>Y", '"+yg_') -- from cursor to end of sentence
 keymap.set("n", "<leader>p", '"+p')
 keymap.set("n", "<leader>P", '"+P')
 
+-- Delete to blackhole register
+keymap.set("n", "X", '"_d')
+keymap.set("n", "XX", '"_dd')
+
 --[[
     Plugins
 ]]
