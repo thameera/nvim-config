@@ -68,7 +68,7 @@ return require('packer').startup(function(use)
 
   -- telescope
   -- <Leader>ff or <C-p> to find files
-  -- <Leader>fs to search for a text (live grep)
+  -- <Leader>a to search for a text (live grep)
   -- <Leader>fc to search for string under cursor
   -- <Leader>fb to see open buffers
   -- <Leader>fh to for help tags
