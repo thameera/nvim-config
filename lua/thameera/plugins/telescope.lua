@@ -11,10 +11,14 @@ end
 telescope.setup({
   defaults = {
     mappings = {
+      n = {
+        ["C-d"] = actions.delete_buffer,
+      },
       i = {
         ["<C-k>"] = actions.move_selection_previous,
         ["<C-j>"] = actions.move_selection_next,
         ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+        ["<C-d>"] = actions.delete_buffer,
       }
     }
   }

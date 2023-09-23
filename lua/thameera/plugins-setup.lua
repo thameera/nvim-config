@@ -50,6 +50,7 @@ return require('packer').startup(function(use)
   use "numToStr/Comment.nvim"
 
   -- nvim-tree
+  -- g? to see help
   -- <Leader>e to toggle
   -- <Enter> to open file
   -- <C-x> or <C-v> to open file in horizontal or vertical split
@@ -70,11 +71,13 @@ return require('packer').startup(function(use)
   -- <Leader>ff or <C-p> to find files
   -- <Leader>a to search for a text (live grep)
   -- <Leader>fc to search for string under cursor
-  -- <Leader>fb to see open buffers
   -- <Leader>fh to for help tags
   -- <C-k> and <C-j> in results to go up/down
   -- <C-x>, <C-v> and <C-t> in results to open file in h split, v split or new tab
   -- <C-c> to close telescope in insert mode
+  -- Buffers:
+  -- <Leader>b to see open buffers
+  -- <C-d> to delete buffer
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "nvim-telescope/telescope.nvim", tag = "0.1.x" }
 
