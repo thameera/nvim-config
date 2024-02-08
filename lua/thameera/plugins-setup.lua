@@ -134,6 +134,11 @@ return require('packer').startup(function(use)
   use "ray-x/go.nvim"
   use "ray-x/guihua.lua" -- for floating windows
 
+  -- emmet
+  -- html:5 then <C-y>, to expand
+  -- More at https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
+  use "mattn/emmet-vim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
