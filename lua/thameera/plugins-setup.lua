@@ -127,9 +127,6 @@ return require('packer').startup(function(use)
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
 
-  -- rust
-  use "simrat39/rust-tools.nvim"
-
   -- go
   use "ray-x/go.nvim"
   use "ray-x/guihua.lua" -- for floating windows
