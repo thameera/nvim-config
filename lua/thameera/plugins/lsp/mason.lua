@@ -21,6 +21,7 @@ mason_lspconfig.setup({
     "jsonls",
     "lua_ls",
     "marksman",
+    "pyright",
     "rust_analyzer",
     "tailwindcss",
     "tsserver",
