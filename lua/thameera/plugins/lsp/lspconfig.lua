@@ -49,6 +49,13 @@ local capabilities = cmp_nvim_lsp.default_capabilities()
 lspconfig["html"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
+  init_options = {
+    configurationSection = { "html", "css", "javascript" },
+  },
+  embeddedLanguages = {
+    css = true,
+    javascript = true,
+  },
 })
 
 -- configure typescript server with plugin
@@ -67,6 +74,18 @@ lspconfig["tailwindcss"].setup({
 
 -- configure Go (gopls)
 lspconfig["gopls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure python (pyright)
+lspconfig["pyright"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure cssls
+lspconfig["cssls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
