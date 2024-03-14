@@ -28,7 +28,7 @@ keymap.set("n", "XX", '"_dd')
 
 -- Javascript-specific
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"javascript", "typescript"},
+  pattern = {"javascript", "typescript", "javascriptreact", "typescriptreact"},
   callback = function()
     keymap.set('n', '<leader>cl', 'iconsole.log()<Esc>i', {buffer = true})
     keymap.set('i', 'clog', 'console.log()<Esc>i', {buffer = true})
