@@ -43,12 +43,6 @@ return require('packer').startup(function(use)
   -- vim-surround
   use "tpope/vim-surround"
 
-  -- comment
-  -- gcc to toggle single-line comment
-  -- gbc to toggle block comment
-  -- gc and gb are opleaders and for visual mode
-  use "numToStr/Comment.nvim"
-
   -- nvim-tree
   -- g? to see help
   -- <Leader>e to toggle
