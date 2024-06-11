@@ -73,7 +73,7 @@ return require('packer').startup(function(use)
   -- <Leader>b to see open buffers
   -- <C-d> to delete buffer
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
-  use { "nvim-telescope/telescope.nvim", tag = "0.1.x" }
+  use { "nvim-telescope/telescope.nvim" }
 
   -- autocompletion
   -- <CR> to accept completion
