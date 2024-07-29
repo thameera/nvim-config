@@ -130,6 +130,9 @@ return require('packer').startup(function(use)
   -- More at https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
   use "mattn/emmet-vim"
 
+  -- lazygit
+  use "kdheepak/lazygit.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

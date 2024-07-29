@@ -54,3 +54,6 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
 -- copilot
 keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
+
+-- lazygit
+keymap.set("n", "<leader>g", ":LazyGit<CR>")
