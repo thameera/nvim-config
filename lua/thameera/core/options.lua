@@ -37,3 +37,11 @@ opt.startofline = true
 -- undo persistence
 opt.undofile = true
 opt.undodir = vim.fn.expand('~/.tmp')
+
+-- folds
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldcolumn = "1"
+opt.foldtext = "" -- no fold text when fold is closed
+opt.foldenable = false -- disable folding by default
+-- opt.foldnestmax = 1 -- prevent deep nesting
