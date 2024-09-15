@@ -35,5 +35,5 @@ opt.iskeyword:append("-")
 opt.startofline = true
 
 -- undo persistence
-vim.opt.undofile = true
-vim.opt.undodir = vim.fn.expand('~/.tmp')
+opt.undofile = true
+opt.undodir = vim.fn.expand('~/.tmp')
