@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-local keymap = vim.keymap -- for conciseness
+local keymap = vim.keymap
 
 -- general keymaps
 
@@ -14,7 +14,6 @@ keymap.set("n", "<Left>", ":bp<CR>") -- prev buffer
 keymap.set("n", "<Right>", ":bn<CR>") -- next buffer
 
 -- Using system clipboard
-
 keymap.set("n", "<leader>y", '"+y')
 keymap.set("v", "<leader>y", '"+y')
 keymap.set("n", "<leader>Y", '"+yg_') -- from cursor to end of sentence

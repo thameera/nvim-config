@@ -1,3 +1,3 @@
 return {
-  "nvim-lua/plenary.nvim", -- depended by many plugins
+  { "nvim-lua/plenary.nvim", lazy = true }, -- depended by many plugins
 }
