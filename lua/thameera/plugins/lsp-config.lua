@@ -27,7 +27,7 @@ local servers = {
   marksman = {},
   pyright = {},
   tailwindcss = {},
-  tsserver = {},
+  ts_ls = {},
   vimls = {},
   yamlls = {},
 }
