@@ -32,6 +32,8 @@ local servers = {
   yamlls = {},
 }
 
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 -- on_attach fn with keybindings
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr, silent = true }
@@ -43,11 +45,6 @@ local on_attach = function(_, bufnr)
   vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
   vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
   vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
-end
-
--- Add on_attach to each server configuration
-for _, opts in pairs(servers) do
-  opts.on_attach = on_attach
 end
 
 return {
@@ -81,6 +78,8 @@ return {
       local lspconfig = require("lspconfig")
 
       for server, opts in pairs(servers) do
+        opts.capabilities = capabilities
+        opts.on_attach = on_attach
         lspconfig[server].setup(opts)
       end
     end,
