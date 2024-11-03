@@ -5,6 +5,7 @@
 -- <Leader>m to search word under cursor
 return {
   "Mr-LLLLL/interestingwords.nvim",
+  event = "VeryLazy",
   opts = {
     search_count = true,
     navigation = true,
