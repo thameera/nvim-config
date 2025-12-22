@@ -33,7 +33,7 @@ local servers = {
 }
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { silent = true })
+vim.keymap.set("n", "<leader>x", vim.diagnostic.open_float, { silent = true })
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { silent = true })
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { silent = true })
 
